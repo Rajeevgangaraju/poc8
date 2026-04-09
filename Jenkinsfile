@@ -15,7 +15,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/im-devendhar/poc-8.git'
+                git branch: 'main', url: 'https://github.com/Rajeevgangaraju/poc8.git'
             }
         }
 
@@ -44,7 +44,7 @@ pipeline {
             steps {
                 sh """
                     docker rm -f ${CONTAINER} || true
-                    docker run -d -p 8085:80 --name ${CONTAINER} ${IMAGE_NAME}:${IMAGE_TAG}
+                    docker run -d -p 85:80 --name ${CONTAINER} ${IMAGE_NAME}:${IMAGE_TAG}
                 """
             }
         }

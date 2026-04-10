@@ -6,7 +6,7 @@ pipeline {
         IMAGE_TAG  = "${BUILD_NUMBER}"
         CONTAINER  = "poc-8"
 
-        SONARQUBE_SERVER = "Sonar-Scanner"
+        SONARQUBE_SERVER = "Sonar-Server"
         SONAR_SCANNER    = "sonar-scanner"
         SONAR_PROJECT_KEY = "POC-8-DevOps"
     }
